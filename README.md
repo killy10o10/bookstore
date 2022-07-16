@@ -7,8 +7,6 @@
 >- Add a book.
 >- Remove a selected book.
 
->I started by building the core functionality, which is a calculator. At the very beginning my website will contain only the simple UI presented below, but it will be able to perform all math operations.
-
 ## Built With 
 
 - HTML 
