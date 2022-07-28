@@ -1,3 +1,53 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap');
+
 .App {
   text-align: center;
+  max-width: 87.5rem;
+  padding: 0 0 50px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fafafa;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: #f5f6fa;
+  font-family: 'Roboto Slab', serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar nav h1 {
+  color: #0290ff;
+}
+
+.profile {
+  border: solid 1px #e8e8e8;
+  color: #0290ff;
+  padding: 6px 10px;
+  border-radius: 50%;
+  font-size: 25px;
 }
