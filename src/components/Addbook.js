@@ -1,12 +1,13 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../redux/books/books';
+import { addBook, addBookThunk } from '../redux/books/books';
 
 function AddBook() {
   const initialInputs = {
     author: '',
     title: '',
+    category: '',
     id: uuidv4(),
   };
 
@@ -28,10 +29,19 @@ function AddBook() {
     setValues(newValue);
   };
 
+  const changeCategory = (e) => {
+    const newValue = {
+      ...values,
+      category: e.target.value,
+    };
+    setValues(newValue);
+  };
+
   const add = useDispatch();
   const handleClick = (e) => {
     e.preventDefault();
     add(addBook(values));
+    add(addBookThunk(values));
     e.target.reset();
   };
 
@@ -49,6 +59,12 @@ function AddBook() {
           type="text"
           placeholder="Author"
           onChange={changeAuthor}
+          required
+        />
+        <input
+          type="text"
+          placeholder="Category"
+          onChange={changeCategory}
           required
         />
         <button type="submit">Add Book</button>
