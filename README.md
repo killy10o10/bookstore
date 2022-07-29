@@ -2,16 +2,18 @@
 
 ## Bookstore
 
->"Bookstore" is a  is a webapp similar to the "Awesome Books" website I built previously. This is an MVP version of it that allows you to:
->- Display a list of books.
->- Add a book.
->- Remove a selected book.
+> "Bookstore" is a is a webapp similar to the "Awesome Books" website I built previously. This is an MVP version of it that allows you to:
+>
+> - Display a list of books.
+> - Add a book.
+> - Remove a selected book.
+>   ![Screenshot](bookstore.png)
 
-## Built With 
+## Built With
 
-- HTML 
-- CSS 
-- JavaScript ES6 
+- HTML
+- CSS
+- JavaScript ES6
 - React
 
 ## Getting Started
