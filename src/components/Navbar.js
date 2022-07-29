@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { BsFillPersonFill } from 'react-icons/bs';
 
 const Navbar = () => (
   <header className="navbar">
@@ -7,7 +8,7 @@ const Navbar = () => (
       <Link to="/">BOOKS </Link>
       <Link to="/categories">CATEGORIES</Link>
     </nav>
-    <i className="bi bi-person-fill profile" />
+    <BsFillPersonFill className="profile" />
   </header>
 );
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux/es/exports';
 import PropTypes from 'prop-types';
+import { CgSpinner } from 'react-icons/cg';
 import { removeBook, removeBookThunk } from '../redux/books/books';
 
 const Book = (props) => {
@@ -15,11 +16,27 @@ const Book = (props) => {
     del(removeBookThunk(id));
   };
   return (
-    <div>
-      <h3>{title}</h3>
-      <p>{author}</p>
-      <p>{category}</p>
-      <div>
+    <div className="book">
+      <div className="book-info">
+        <p className="category">{category}</p>
+        <h3 className="title">{title}</h3>
+        <p className="author">{author}</p>
+        <div className="modify">
+          <p>Comments</p>
+          <p className="remove">Remove</p>
+          <p>Edit</p>
+        </div>
+      </div>
+      <div className="progress">
+        <CgSpinner className="spinner" />
+        <div>
+          <p className="progress-info">
+            <span className="percentage">23%</span>
+            <span className="completed">completed</span>
+          </p>
+        </div>
+      </div>
+      <div className="remove-div">
         <button type="button" onClick={handleClick}>
           Remove
         </button>
