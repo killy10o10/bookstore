@@ -46,11 +46,12 @@ function AddBook() {
   };
 
   return (
-    <div>
+    <div className="form-container">
       <h2>Add new Book</h2>
       <form onSubmit={handleClick}>
         <input
           type="text"
+          className="add-book"
           placeholder="Add Book"
           onChange={changeTitle}
           required

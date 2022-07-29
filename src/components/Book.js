@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux/es/exports';
 import PropTypes from 'prop-types';
@@ -23,7 +25,9 @@ const Book = (props) => {
         <p className="author">{author}</p>
         <div className="modify">
           <p>Comments</p>
-          <p className="remove">Remove</p>
+          <p className="remove" onClick={handleClick}>
+            Remove
+          </p>
           <p>Edit</p>
         </div>
       </div>
@@ -37,9 +41,9 @@ const Book = (props) => {
         </div>
       </div>
       <div className="remove-div">
-        <button type="button" onClick={handleClick}>
-          Remove
-        </button>
+        <p className="chapter">CURRENT CHAPTER</p>
+        <p>CHAPTER 17</p>
+        <button type="button">UPDATE PROGRESS</button>
       </div>
     </div>
   );
