@@ -7,7 +7,9 @@
 > - Display a list of books.
 > - Add a book.
 > - Remove a selected book.
->   ![Screenshot](bookstore.png)
+##
+
+>  ![Screenshot](bookstore.png)
 
 ## Built With
 
